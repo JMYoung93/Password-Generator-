@@ -23,7 +23,7 @@ copybtnDOM.addEventListener('click', () => {
   const passwordToCopy = resultDOM.innerText;
 
   // Edge Case when Password is Empty
-  if (!passwordToCopy) return;
+  //if (passwordToCopy === undefined) return;
 
   // Copy Functionality
   textarea.value = passwordToCopy;
@@ -35,7 +35,7 @@ copybtnDOM.addEventListener('click', () => {
 });
 
 // Add event listener to generate button
-generateBtn.addEventListener('submit', (e) => {
+generateBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const characterAmount = lengthDOM.value;
   const includeUppercase = uppercaseDOM.checked;
