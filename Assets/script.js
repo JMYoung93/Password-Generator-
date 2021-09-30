@@ -19,8 +19,7 @@ const UPPERCASE_CODES = arrayFromLowToHigh(65, 90);
 
 //Copy Password
 copybtnDOM.addEventListener('click', () => {
-  const textarea = document.createElement('textarea');
-  const passwordToCopy = resultDOM.innerText;
+  const passwordToCopy = resultDOM.value;
 
   // Edge Case when Password is Empty
   //if (passwordToCopy === undefined) return;
@@ -28,7 +27,7 @@ copybtnDOM.addEventListener('click', () => {
   // Copy Functionality
   textarea.value = passwordToCopy;
   document.body.appendChild(textarea);
-  textarea.select();
+  select();
   document.execCommand('copy');
   textarea.remove();
   alert('Password Copied to Clipboard');
