@@ -18,18 +18,20 @@ const UPPERCASE_CODES = arrayFromLowToHigh(65, 90);
     .concat(arrayFromLowToHigh(123, 126));
 
 //Copy Password
-copybtnDOM.addEventListener('click', () => {
+copybtnDOM.addEventListener('click', (e) => {
+ 
   const passwordToCopy = resultDOM.value;
-
+  navigator.clipboard.writeText(passwordToCopy);
+  console.log(passwordToCopy)
   // Edge Case when Password is Empty
   //if (passwordToCopy === undefined) return;
 
   // Copy Functionality
-  textarea.value = passwordToCopy;
-  document.body.appendChild(textarea);
-  select();
-  document.execCommand('copy');
-  textarea.remove();
+  resultDOM.value = passwordToCopy;
+  document.body.appendChild(resultDOM);
+  resultDOM.select();
+  document.execCommand("copy");
+  resultDOM.remove();
   alert('Password Copied to Clipboard');
 });
 
