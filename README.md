@@ -4,7 +4,7 @@ This is a password generator that I coded to create a secure password using any 
 ## Installation
 Visual Studio Code.
 ## Usage
-N/A
+Create a randomized password.
 ## Credits
 Nick Golston
 Dillan Mansor
@@ -19,4 +19,5 @@ N/A
 ## Tests
 N/A
 
+<link  rel= "Screenshot" href="./Password-Generator.png" alt= "Image of Jeffrey Young's Password Generator"/>
 

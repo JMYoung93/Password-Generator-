@@ -33,7 +33,7 @@ header {
 textarea {
   display: flex;
   height: 100px;
-  width: 720px;
+  width: 100%;
 }
 
 .card {
@@ -58,7 +58,7 @@ textarea {
 
 .card-body {
   min-height: 100px;
-  width: 100px;
+  width: 100%;
 }
 
 .card-footer {
